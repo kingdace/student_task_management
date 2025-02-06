@@ -20,4 +20,4 @@
 6. Run `php artisan queue:work` for background process
 
 
-NB : Make sure you got maildev for TestingEmail locally
+NB : Make sure you got maildev for TestingEmail locally"# Stud_Task" 
