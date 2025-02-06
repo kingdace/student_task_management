@@ -1,0 +1,75 @@
+body {
+    background-color: #f0f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 50px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Section Styles */
+.form-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.form-section .header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.form-section .header-actions h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"],
+.form-section input[type="password"] {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-section input[type="text"]:focus,
+.form-section input[type="email"]:focus,
+.form-section input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.form-section .save-button {
+    display: block;
+    width: 130px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 20px auto; /* Centers the button horizontally */
+    text-align: center; /* Ensures the text inside is centered */
+}
+
+.form-section .save-button:hover {
+    background-color: #0056b3;
+}

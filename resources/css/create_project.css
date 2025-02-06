@@ -1,0 +1,58 @@
+body {
+    background-color: #f0f4f9;
+    font-family: Arial, sans-serif;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 50px; /* Adjust this to set uniform padding */
+    padding-bottom: 10px; /* Set bottom padding specifically */
+    margin-top: 50px; /* Top margin */
+    margin-bottom: 10px; /* Set bottom margin specifically */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section .header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.form-section .header-actions h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.form-section .save-button {
+    margin-top: 20px;
+}
+
+.form-section .redirect-link {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.form-section .redirect-link a {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.form-section .redirect-link .see-projects {
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    font-size: 16px;
+}

@@ -1,0 +1,74 @@
+body {
+    background-color: #f0f4f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container styling */
+.main-content {
+    margin-left: 130px;
+    padding: 2px;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.user-header h2 {
+    font-weight: 500;
+    color: #007bff;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Profile Information section */
+.profile-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-details {
+    font-size: 16px;
+    color: #333;
+}
+
+/* User Information box styling */
+.user-info-box {
+    margin-top: -20px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.user-details h3 {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.user-details p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

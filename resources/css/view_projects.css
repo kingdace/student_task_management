@@ -1,0 +1,66 @@
+body {
+    background-color: #f0f4f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Main content */
+.main-content {
+    flex-grow: 1;
+    padding: 50px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Projects section */
+.projects-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+.projects-section .header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.projects-section .header-actions h2 {
+    font-weight: bold;
+    margin: 0;
+}
+
+.projects-section .header-actions .btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.projects-section .search-bar {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.projects-section .projects-table th,
+.projects-section .projects-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.projects-section .projects-table .progress-bar {
+    background-color: #007bff;
+}
+
+.projects-section .action-buttons .btn {
+    margin-right: 5px;
+}
+
+.table-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

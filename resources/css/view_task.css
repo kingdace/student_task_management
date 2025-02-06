@@ -1,0 +1,329 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Main Content */
+.main-content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: white;
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-title h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Progress Bar */
+.progress-bar {
+    margin: 20px 0;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 20px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #28a745;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.progress-text {
+    color: white;
+    margin-left: 200px;
+    margin-top: 2px;
+}
+
+/* Tasks Section */
+.tasks {
+    margin-top: 20px;
+}
+
+.task-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-column {
+    width: 32%;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    min-height: 300px;
+    position: relative;
+}
+
+.task-column h3 {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.add-task-btn {
+    width: 100%;
+    background-color: #ffc107;
+    padding: 10px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.task-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    cursor: grab;
+    position: relative;
+}
+
+.task-card.dragging {
+    opacity: 0.5;
+}
+
+.task-column.over {
+    background-color: #f1f1f1;
+}
+
+.assignees {
+    display: flex;
+}
+
+.assignees .avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #007bff;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* Modal Container */
+.modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(
+        0,
+        0,
+        0,
+        0.5
+    ); /* Dark background for focus on modal */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Fixed width for modal */
+    max-width: 100%; /* Responsive width */
+    position: relative;
+}
+
+/* Header */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.modal-header h3 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 500;
+    color: #333;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #999;
+}
+
+.modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Input Fields and Button */
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.input-group button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Search Input */
+.search-input {
+    margin-bottom: 20px;
+}
+
+.search-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    text-align: left;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    font-weight: bold;
+    color: #555;
+}
+
+table td {
+    color: #333;
+    font-size: 14px;
+}
+
+.table-btn {
+    padding: 6px 12px;
+    background-color: #6c757d;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.table-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%;
+    }
+
+    .input-group button {
+        font-size: 12px;
+    }
+
+    table th,
+    table td {
+        font-size: 12px;
+    }
+
+    .table-btn {
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    /* Selected members container and styling */
+    .selected-members-container {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #f1f1f1;
+        border-radius: 5px;
+    }
+
+    .selected-member {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .selected-member .remove-member {
+        cursor: pointer;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background-color: #ff5f5f;
+        color: white;
+        border-radius: 50%;
+        padding: 2px 6px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "app_key": "rqstow4sbplqshtxxkak",
+    "app_id": "149166",
+    "app_secret": "9hon33i81fj34x4zawz4",
+    "auth_host": "http://localhost",
+    "auth_endpoint": "/broadcasting/auth",
+    "database": "redis",
+    "database_config": {
+        "host": "127.0.0.1",
+        "port": 6379
+    },
+    "port": 8080,
+    "host": "localhost",
+    "protocol": "http",
+    "sslCertPath": "",
+    "sslKeyPath": "",
+    "allow_origin": ["http://localhost", "https://localhost"]
+}

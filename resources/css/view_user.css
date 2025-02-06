@@ -1,0 +1,94 @@
+body {
+    background-color: #f0f4f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Main container styling */
+.main-content {
+    margin-left: 130px;
+    padding: 2px;
+}
+
+.container {
+    max-width: 900px;
+}
+
+.user-header h2 {
+    font-weight: 500;
+    color: #007bff;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Profile Information section */
+.profile-info {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-details {
+    font-size: 16px;
+    color: #333;
+}
+
+/* User Information box styling */
+.user-info-box {
+    margin-top: -20px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.user-details h3 {
+    font-size: 18px;
+    color: #007bff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.user-details p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .main-content {
+        margin-left: 180px;
+    }
+
+    .user-info-box {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        width: 150px;
+    }
+
+    .main-content {
+        margin-left: 150px;
+    }
+
+    .user-profile .profile-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+}
